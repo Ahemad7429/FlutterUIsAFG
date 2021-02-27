@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_uis/apps/food_delivery/screens/food_delivery_screen.dart';
 import 'package:flutter_uis/apps/inspiration/screens/inspiration_screen.dart';
 import 'package:flutter_uis/apps/trip/screens/trip_screen.dart';
 import 'package:flutter_uis/common/helper/app_route.dart';
@@ -14,11 +15,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter AFG UIs Demo',
-      // ignore: always_specify_types
       routes: {
         '/': (_) => RootScreen(),
         AppRoute.inspirationScreen: (_) => InspirationScreen(),
-        AppRoute.tripScreen: (_) => TripScreen()
+        AppRoute.tripScreen: (_) => TripScreen(),
+        AppRoute.foodDeliveryScreen: (_) => FoodDeliveryScreen()
       },
     );
   }

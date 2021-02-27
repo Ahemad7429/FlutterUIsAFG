@@ -23,6 +23,12 @@ class RootScreen extends StatelessWidget {
             onPressed: () {
               Navigator.of(context).pushNamed(AppRoute.tripScreen);
             },
+          ),
+          AppButton(
+            title: 'Day 3: Food Delivery App UI',
+            onPressed: () {
+              Navigator.of(context).pushNamed(AppRoute.foodDeliveryScreen);
+            },
           )
         ],
       ),
