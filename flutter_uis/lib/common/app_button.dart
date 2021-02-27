@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppButton extends StatelessWidget {
-  final Function onPressed;
+  final Function() onPressed;
   final String title;
 
   const AppButton({
@@ -16,17 +16,17 @@ class AppButton extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
         RaisedButton(
+          color: Colors.redAccent,
+          onPressed: onPressed,
           child: Text(
             title,
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.white,
               fontWeight: FontWeight.bold,
             ),
           ),
-          color: Colors.redAccent,
-          onPressed: onPressed,
         ),
-        SizedBox(height: 20)
+        const SizedBox(height: 20)
       ],
     );
   }

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_uis/apps/inspiration/screens/inspiration_screen.dart';
+import 'package:flutter_uis/common/app_route.dart';
 import 'package:flutter_uis/common/root_screen.dart';
 
 void main() {
@@ -11,7 +13,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter AFG UIs Demo',
-      home: RootScreen(),
+      // home: RootScreen(),
+      routes: {
+        '/': (_) => RootScreen(),
+        AppRoute.inspirationScreen: (_) => InspirationScreen()
+      },
     );
   }
 }
