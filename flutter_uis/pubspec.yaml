@@ -49,6 +49,7 @@ flutter:
     - assets/apps/inspiration/images/
     - assets/apps/trip/images/
     - assets/apps/food_delivery/images/
+    - assets/apps/actor_profile/images/ 
 
   fonts:
     - family: Roboto

@@ -29,6 +29,12 @@ class RootScreen extends StatelessWidget {
             onPressed: () {
               Navigator.of(context).pushNamed(AppRoute.foodDeliveryScreen);
             },
+          ),
+          AppButton(
+            title: 'Day 4: Actor Profile App UI',
+            onPressed: () {
+              Navigator.of(context).pushNamed(AppRoute.actorProfileScreen);
+            },
           )
         ],
       ),

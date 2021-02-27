@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_uis/apps/actor_profile/screens/actor_profile.dart';
 import 'package:flutter_uis/apps/food_delivery/screens/food_delivery_screen.dart';
 import 'package:flutter_uis/apps/inspiration/screens/inspiration_screen.dart';
 import 'package:flutter_uis/apps/trip/screens/trip_screen.dart';
@@ -19,7 +20,8 @@ class MyApp extends StatelessWidget {
         '/': (_) => RootScreen(),
         AppRoute.inspirationScreen: (_) => InspirationScreen(),
         AppRoute.tripScreen: (_) => TripScreen(),
-        AppRoute.foodDeliveryScreen: (_) => FoodDeliveryScreen()
+        AppRoute.foodDeliveryScreen: (_) => FoodDeliveryScreen(),
+        AppRoute.actorProfileScreen: (_) => ActorProfileScreen(),
       },
     );
   }
